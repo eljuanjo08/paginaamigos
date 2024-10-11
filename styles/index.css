@@ -401,6 +401,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -409,6 +410,10 @@
 .cooperadores .cooperadores-container img {
   height: 140px;
   filter: grayscale(100%);
+}
+
+.cooperadores .cooperadores-container .quimafar {
+  height: 100px;
 }
 
 /* Ubicacion */
@@ -539,6 +544,10 @@
 
   .section.cooperadores .cooperadores-container img {
     height: 120px;
+  }
+
+  .cooperadores .cooperadores-container img.quimafar {
+    height: 80px;
   }
 
   .section.ubicacion {
