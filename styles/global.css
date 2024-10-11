@@ -171,7 +171,7 @@ ul {
 /* Desplegar al costado cuando el alto de la pantalla es como el de un teléfono en horizontal */
 @media (max-height: 500px) {
   #socials-list {
-    display: flex;
+    display: none;
     flex-direction: row;
     position: fixed;
     bottom: 20px;
@@ -189,10 +189,15 @@ ul {
   
   /* Estilos para la orientación horizontal */
   #socials-list.horizontal {
+    width: 88%;
     flex-direction: row;
+    align-items: center;
     bottom: 20px;
-    left: 40%;
     right: auto;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente */
+    -webkit-backdrop-filter: blur(20px); /* Soporte para Safari */
+    backdrop-filter: blur(20px); /* Efecto de desenfoque */
+    border-radius: 20px;
   }
 
   .example-2 .icon-content .tooltip {
